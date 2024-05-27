@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="logo.png" class="logo" alt="YouTube Logo">
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="Search" id="search-input">
+            <button class="search-btn" onclick="searchVideos()"><img src="magnify.svg" alt="Search Icon"></button>
+        </div>
+        <div class="user-options">
+            <img src="video-plus.svg" class="icon" alt="Upload Icon">
+            <img src="bell.svg" class="icon" alt="Notifications Icon">
+            <div class="user-dp">
+                <img src="first puc.jpg" alt="User Profile Picture">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="side-bar" id="sidebar">
+        <a href="home.html" class="links active"><i class="fas fa-home"></i> Home</a>
+        <a href="subscription.html" class="links"><i class="fab fa-youtube"></i> Subscription</a>
+        <hr class="separator">
+        <a href="your_channel.html" class="links"><img src="img/history.PNG" alt=""> Your Channel</a>
+        <a href="history.html" class="links"><img src="img/history.PNG" alt=""> History</a>
+        <hr class="separator">
+        <a href="" class="links"><img src="" alt=""> Explore</a>
+        <a href="trending.html" class="links"><img src="" alt=""> Trending</a>
+        <a href="music.html" class="links"><img src="" alt=""> Music</a>
+        <hr class="separator">
+        <a href="settings.html" class="links"><img src="" alt=""> Settings</a>
+        <a href="feedback.html" class="links"><img src="" alt=""> Send Feedback</a>
+    </div>
+    
+
+    <!-- Filters -->
+    <div class="filters">
+        <button class="filter-options active">All</button>
+        <button class="filter-options">CSS</button>
+        <button class="filter-options">Web Development</button>
+        <button class="filter-options">Python</button>
+        <button class="filter-options">Entertainment</button>
+        <button class="filter-options">Marvel</button>
+        <button class="filter-options">JavaScript</button>
+        <button class="filter-options">Artificial Intelligence</button>
+        <button class="filter-options">Machine Learning</button>
+        <button class="filter-options">Trending</button>
+    </div>
+    <div class="image-container">
+        <img src="me.png" alt="Image Description">
+    </div>
+    <!-- Videos -->
+    <div class="video-container">
+
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="Vid1.mp4" class="video-box">
+                    <img src="Pic1.jpg" alt="Video Thumbnail">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="Pthumb.jpg" alt="Channel Logo">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">The Riders</h3>
+                        <div class="channel-name">Just Fun</div>
+                        <div class="views-upload">
+                            <div class="views">1.2B views</div>
+                            <div class="upload">• 4 years ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="Vid2.mp4" class="video-box">
+                    <img src="Pic2.jpg" alt="Video Thumbnail">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="Pthumb1.jpg" alt="Channel Logo">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">Saplok The Dancer</h3>
+                        <div class="channel-name">Just Fun</div>
+                        <div class="views-upload">
+                            <div class="views">1.9B views</div>
+                            <div class="upload">• 3 year ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="Vid3.mp4" class="video-box">
+                    <img src="Pic3.jpg" alt="Video Thumbnail">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="Pthumb2.jpg" alt="Channel Logo">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">Budots totstotstots</h3>
+                        <div class="channel-name">Just Fun</div>
+                        <div class="views-upload">
+                            <div class="views">1.86B views</div>
+                            <div class="upload">• 3 years ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="Vid4.mp4" class="video-box">
+                    <img src="Pic4.jpg" alt="Video Thumbnail">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="Pthumb.jpg" alt="Channel Logo">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">HAHAHAHAH</h3>
+                        <div class="channel-name">Just FUn</div>
+                        <div class="views-upload">
+                            <div class="views">1.69B views</div>
+                            <div class="upload">• 3 years ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="Vid5.mp4" class="video-box">
+                    <img src="Pic5.jpg" alt="Video Thumbnail">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="Pthumb1.jpg" alt="Channel Logo">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">The Sleeping Boy</h3>
+                        <div class="channel-name">Just Fun</div>
+                        <div class="views-upload">
+                            <div class="views">6B views</div>
+                            <div class="upload">• 20 second ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="Vid6.mp4" class="video-box">
+                    <img src="Pic6.jpg" alt="Video Thumbnail">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="Pthumb2.jpg" alt="Channel Logo">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">Carlito The Jordan Pole</h3>
+                        <div class="channel-name">Just Fun</div>
+                        <div class="views-upload">
+                            <div class="views">100B views</div>
+                            <div class="upload">• 25 years ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="Vid7.mp4" class="video-box">
+                    <img src="Pic7.jpg" alt="Video Thumbnail">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="Pthumb.jpg" alt="Channel Logo">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">Saplok</h3>
+                        <div class="channel-name">Just Fun</div>
+                        <div class="views-upload">
+                            <div class="views">10B views</div>
+                            <div class="upload">• 20 years ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="Vid8.mp4" class="video-box">
+                    <img src="Pic8.jpg" alt="Video Thumbnail">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="Pthumb2.jpg" alt="Channel Logo">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">Kirt</h3>
+                        <div class="channel-name">Just Fun</div>
+                        <div class="views-upload">
+                            <div class="views">1B views</div>
+                            <div class="upload">• 25 years ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-cover">
+            <div class="video-content">
+                <a href="Vid9.mp4" class="video-box">
+                    <img src="Pic9.jpg" alt="Video Thumbnail">
+                </a>
+                <div class="video-details">
+                    <div class="channel-logo">
+                        <img src="Pthumb2.jpg" alt="Channel Logo">
+                    </div>
+                    <div class="detail">
+                        <h3 class="title">Carlito</h3>
+                        <div class="channel-name">Just Fun</div>
+                        <div class="views-upload">
+                            <div class="views">10B views</div>
+                            <div class="upload">• 15 years ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('active');
+    }
+
+    function setActiveLink(event) {
+        const links = document.querySelectorAll('.side-bar .links');
+        links.forEach(link => link.classList.remove('active'));
+        event.currentTarget.classList.add('active');
+    }
+
+    document.querySelectorAll('.side-bar .links').forEach(link => {
+        link.addEventListener('click', setActiveLink);
+    });
+</script> 
+</body>
+</html>
